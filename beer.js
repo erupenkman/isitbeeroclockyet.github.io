@@ -27,7 +27,7 @@ window.onload = function () {
 		if (hour == "16" && minute >= 30 && date.getDay() === 5)
 		{
 			document.querySelector('#message').textContent = "YES";
-      document.querySelector('#world').display = "block";
+      document.querySelector('#world').style.display = 'block';
 
 		}
     	document.cookie="visited=true";
