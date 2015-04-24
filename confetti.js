@@ -21,10 +21,7 @@
   };
 
   window.addEventListener('resize', resizeWindow, false);
-
-  window.onload = function() {
-    return setTimeout(resizeWindow, 0);
-  };
+setTimeout(resizeWindow, 0);
 
   range = function(a, b) {
     return (b - a) * Math.random() + a;
