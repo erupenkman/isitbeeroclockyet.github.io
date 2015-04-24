@@ -24,10 +24,10 @@ window.onload = function () {
 		var hour = date.getHours();
 		var minute = date.getMinutes();
 		var second = date.getSeconds();
-		if (hour == "16" && minute == "30" && date.getDay() === 5)
+		if (hour == "16" && minute >= 30 && date.getDay() === 5)
 		{
 			document.querySelector('#message').textContent = "YES";
-      document.querySelector('#world').display = "block";
+      document.querySelector('#world').style.display = 'block';
 
 		}
     	document.cookie="visited=true";
