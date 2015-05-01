@@ -11,14 +11,6 @@ function getCookie(cname) {
 
 
 window.onload = function () {
-	if (getCookie("visited") == "true")
-	{
-		window.setTimeout(function(){
-        window.location.href = "http://www.aa.org.au/";
-    	}, 3000);
-	}
-	else
-	{
 		var date = new Date;
 		date.getTime();
 		var hour = date.getHours();
@@ -27,9 +19,7 @@ window.onload = function () {
 		if (hour == "16" && minute >= 30 && date.getDay() === 5)
 		{
 			document.querySelector('#message').textContent = "YES";
-      document.querySelector('#world').style.display = 'block';
-
-		}
-    	document.cookie="visited=true";
+      		document.querySelector('#world').style.display = 'block';
+      	}
 	}
 };
